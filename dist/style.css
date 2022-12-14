@@ -513,6 +513,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
 .flex {
   display: flex;
 }
@@ -533,12 +537,12 @@ video {
   height: 10rem;
 }
 
-.h-6 {
-  height: 1.5rem;
+.h-full {
+  height: 100%;
 }
 
-.h-32 {
-  height: 8rem;
+.h-6 {
+  height: 1.5rem;
 }
 
 .w-screen {
@@ -563,6 +567,14 @@ video {
 
 .w-6 {
   width: 1.5rem;
+}
+
+.flex-none {
+  flex: none;
+}
+
+.flex-auto {
+  flex: 1 1 auto;
 }
 
 .flex-row {
@@ -637,6 +649,10 @@ video {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.pr-4 {
+  padding-right: 1rem;
 }
 
 .text-justify {
@@ -766,8 +782,8 @@ video {
     row-gap: 1.75rem;
   }
 
-  .lg\:overflow-auto {
-    overflow: auto;
+  .lg\:overflow-y-auto {
+    overflow-y: auto;
   }
 
   .lg\:p-0 {
