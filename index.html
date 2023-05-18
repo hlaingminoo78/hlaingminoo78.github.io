@@ -1,189 +1,379 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./dist/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;900&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
     <title>HMO</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <main class="w-screen lg:h-screen flex flex-col lg:flex-row">
-        <section class="left-section lg:w-1/4 lg:h-full flex justify-center items-center py-6 lg:p-0 bg-slate-100">
+      <section
+        class="left-section lg:w-1/4 lg:h-full flex justify-center items-center py-6 lg:p-0 bg-slate-100"
+      >
+        <div
+          class="info w-4/5 h-4/5 flex flex-col sm:flex-row lg:flex-col gap-y-4 sm:gap-0 items-center justify-between"
+        >
+          <div class="profile flex flex-col gap-y-3 lg:gap-y-7 items-center">
+            <img
+              src="./public/img/hmo_passport.jpg"
+              class="w-28 h-28 rounded-full object-cover"
+              alt=""
+            />
+            <p class="text-3xl font-outfit">Hlaing Min Oo</p>
+            <ul class="text-lg text-center font-serif">
+              <li>Data Analyst</li>
+              <li>Software Developer</li>
+              <li>AI Enthusiast</li>
+            </ul>
+          </div>
+          <div class="contact flex flex-col gap-y-1 sm:gap-y-3">
+            <div class="contact-line flex flex-row items-center gap-x-1.5">
+              <img src="./public/icon/email.svg" class="w-5 h-5" alt="" />
+              <p
+                class="font-outfit text-base hover:underline hover:cursor-pointer"
+              >
+                hlaingminoo7788@gmail.com
+              </p>
+            </div>
+            <div class="contact-line flex flex-row items-center gap-x-1.5">
+              <img src="./public/icon/linkedin.svg" class="w-5 h-5" alt="" />
+              <p
+                class="font-outfit text-base hover:underline hover:cursor-pointer"
+              >
+                <a href="https://linkedin.com/in/hmo78" target="_blank"
+                  >linkedin.com/in/hmo78</a
+                >
+              </p>
+            </div>
+            <div class="contact-line flex flex-row items-center gap-x-1.5">
+              <img src="./public/icon/github.svg" class="w-5 h-5" alt="" />
+              <p
+                class="font-outfit text-base hover:underline hover:cursor-pointer"
+              >
+                <a href="https://github.com/hlaingminoo78" target="_blank"
+                  >github.com/hlaingminoo78</a
+                >
+              </p>
+            </div>
+            <div class="contact-line flex flex-row items-center gap-x-1.5">
+              <img src="./public/icon/location.svg" class="w-5 h-5" alt="" />
+              <p class="font-outfit text-base">Myanmar</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="right-section w-full lg:w-3/4 lg:h-full flex flex-col justify-center items-center py-6 lg:p-0"
+      >
+        <h1 class="w-4/5 mb-5 text-xl font-outfit">My Projects</h1>
+        <div
+          class="projects w-4/5 lg:h-4/5 flex flex-col gap-y-10 pr-4 lg:overflow-y-auto"
+        >
+          <div class="project flex flex-col sm:flex-row gap-y-3 sm:gap-x-7">
+            <a
+              href="https://hlaingminoo78.github.io/knn/"
+              class="flex-none w-full h-40 sm:w-32 sm:h-32"
+              ><img
+                src="./public/img/knn.jpg"
+                class="w-full h-full object-cover"
+                alt=""
+            /></a>
             <div
-                class="info w-4/5 h-4/5 flex flex-col sm:flex-row lg:flex-col gap-y-4 sm:gap-0 items-center justify-between">
-                <div class="profile flex flex-col gap-y-3 lg:gap-y-7 items-center">
-                    <img src="./public/img/hmo_passport.jpg" class="w-28 h-28 rounded-full object-cover" alt="">
-                    <p class="text-3xl font-outfit">Hlaing Min Oo</p>
-                    <p class="text-lg font-serif">Software Developer | AI Enthusiast</p>
-                </div>
-                <div class="contact flex flex-col gap-y-1 sm:gap-y-3">
-                    <div class="contact-line flex flex-row items-center gap-x-1.5">
-                        <img src="./public/icon/email.svg" class="w-5 h-5" alt="">
-                        <p class="font-outfit text-base hover:underline hover:cursor-pointer">hlaingminoo7778@gmail.com
-                        </p>
-                    </div>
-                    <div class="contact-line flex flex-row items-center gap-x-1.5">
-                        <img src="./public/icon/linkedin.svg" class="w-5 h-5" alt="">
-                        <p class="font-outfit text-base hover:underline hover:cursor-pointer"><a
-                                href="https://linkedin.com/in/hmo78" target="_blank">linkedin.com/in/hmo78</a></p>
-                    </div>
-                    <div class="contact-line flex flex-row items-center gap-x-1.5">
-                        <img src="./public/icon/github.svg" class="w-5 h-5" alt="">
-                        <p class="font-outfit text-base hover:underline hover:cursor-pointer"><a
-                                href="https://github.com/hlaingminoo78" target="_blank">github.com/hlaingminoo78</a></p>
-                    </div>
-                    <div class="contact-line flex flex-row items-center gap-x-1.5">
-                        <img src="./public/icon/location.svg" class="w-5 h-5" alt="">
-                        <p class="font-outfit text-base">Myanmar</p>
-                    </div>
-                </div>
+              class="project-desc flex-auto flex flex-col gap-y-2 lg:gap-0 lg:justify-between"
+            >
+              <p class="text-xl font-outfit hover:underline">
+                <a href="https://hlaingminoo78.github.io/knn/"
+                  >K Nearest Neighbors Algorithm Visualization</a
+                >
+              </p>
+              <p class="text-sm text-justify font-serif">
+                Visualization of K Nearest Neighbors Algorithm. Test data (node)
+                will be your [x, y] locations of your mouse and it will change
+                classified color. Nearest neighbors will highlight and show
+                connection with test node if it gets closer. You can varies the
+                amount of K, labels and data points.
+              </p>
+              <div class="techstack flex flex-row gap-x-3">
+                <a href="https://p5js.org/" target="_blank"
+                  ><img src="./public/icon/p5js.svg" class="w-6 h-6" alt=""
+                /></a>
+                <img
+                  src="./public/icon/javascript.svg"
+                  class="w-6 h-6"
+                  alt=""
+                />
+                <img src="./public/icon/html.svg" class="w-6 h-6" alt="" />
+                <img src="./public/icon/css3.svg" class="w-6 h-6" alt="" />
+                <a
+                  href="https://github.com/hlaingminoo78/knn"
+                  class="hover:cursor-pointer hover:underline"
+                  target="_blank"
+                  >View Source</a
+                >
+              </div>
             </div>
-        </section>
-        <section class="right-section w-full lg:w-3/4 lg:h-full flex flex-col justify-center items-center py-6 lg:p-0">
-            <h1 class="w-4/5 mb-5 text-xl font-outfit">My Projects</h1>
-            <div class="projects w-4/5 lg:h-4/5 flex flex-col gap-y-10 pr-4 lg:overflow-y-auto">
-                <div class="project flex flex-col sm:flex-row gap-y-3 sm:gap-x-7">
-                    <a href="https://hlaingminoo78.github.io/eight_puzzle_solver_ui/"
-                        class="flex-none w-full h-40 sm:w-32 sm:h-32"><img src="./public/img/eight_puzzle.png"
-                            class="w-full h-full object-cover" alt=""></a>
-                    <div class="project-desc flex-auto flex flex-col gap-y-2 lg:gap-0 lg:justify-between">
-                        <p class="text-xl font-outfit hover:underline"><a
-                                href="https://hlaingminoo78.github.io/eight_puzzle_solver_ui/">8 Puzzle Solver</a></p>
-                        <p class="text-sm text-justify font-serif">
-                            Classic 8 puzzle game is automatically solved by 3 search algorithms (breadth first search,
-                            depth first search, and a* search). You can assign with different puzzle positions and it
-                            will check whether it is solvable or not. It will also show you how many search it has made.
-                        </p>
-                        <div class="techstack flex flex-row gap-x-3">
-                            <a href="https://p5js.org/" target="_blank"><img src="./public/icon/p5js.svg"
-                                    class="w-6 h-6" alt=""></a>
-                            <img src="./public/icon/javascript.svg" class="w-6 h-6" alt="">
-                            <img src="./public/icon/html.svg" class="w-6 h-6" alt="">
-                            <img src="./public/icon/css3.svg" class="w-6 h-6" alt="">
-                            <a href="https://github.com/hlaingminoo78/eight_puzzle_solver"
-                                class="hover:cursor-pointer hover:underline">View Source</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project flex flex-col sm:flex-row gap-y-3 sm:gap-x-7">
-                    <a href="https://hlaingminoo78.github.io/dwa/" class="flex-none w-full h-40 sm:w-32 sm:h-32"><img
-                            src="./public/img/dynamic_window_approach.png" class="w-full h-full object-cover"
-                            alt=""></a>
-                    <div class="project-desc flex flex-col gap-y-2 lg:gap-0 lg:justify-between">
-                        <p class="text-xl font-outfit hover:underline"><a
-                                href="https://hlaingminoo78.github.io/dwa/">Dynamic Window Approach</a>
-                        </p>
-                        <p class="text-sm text-justify font-serif">
-                            Demonstration of Dynamic Window Approach algorithm. You can varies the amount of obstacles
-                            and the robot will try to reach the goal. It will also show you the path it has moved.
-                        </p>
-                        <div class="techstack flex flex-row gap-x-3">
-                            <a href="https://p5js.org/" target="_blank"><img src="./public/icon/p5js.svg"
-                                    class="w-6 h-6" alt=""></a>
-                            <img src="./public/icon/javascript.svg" class="w-6 h-6" alt="">
-                            <img src="./public/icon/html.svg" class="w-6 h-6" alt="">
-                            <img src="./public/icon/css3.svg" class="w-6 h-6" alt="">
-                            <a href="https://github.com/hlaingminoo78/dwa"
-                                class="hover:cursor-pointer hover:underline">View Source</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project flex flex-col sm:flex-row gap-y-3 sm:gap-x-7">
-                    <a href="https://hlaingminoo78.github.io/astar_path_finder/"
-                        class="flex-none w-full h-40 sm:w-32 sm:h-32"><img src="./public/img/astar_search.png"
-                            class="w-full h-full object-cover" alt=""></a>
-                    <div class="project-desc flex flex-col gap-y-2 lg:gap-0 lg:justify-between">
-                        <p class="text-xl font-outfit hover:underline"><a
-                                href="https://hlaingminoo78.github.io/astar_path_finder/">A* Path Finder</a></p>
-                        <p class="text-sm text-justify font-serif">
-                            Demonstration of A* path finding algorithm. You can assign the start node, end node and it
-                            will check whether it is found or not. It will also show you how many search it has made.
-                        </p>
-                        <div class="techstack flex flex-row gap-x-3">
-                            <img src="./public/icon/javascript.svg" class="w-6 h-6" alt="">
-                            <img src="./public/icon/html.svg" class="w-6 h-6" alt="">
-                            <img src="./public/icon/css3.svg" class="w-6 h-6" alt="">
-                            <a href="https://github.com/hlaingminoo78/astar_path_finder"
-                                class="hover:cursor-pointer hover:underline">View Source</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project flex flex-col sm:flex-row gap-y-3 sm:gap-x-7">
-                    <a href="https://hlaingminoo78.github.io/react_todolist/"
-                        class="flex-none w-full h-40 sm:w-32 sm:h-32"><img src="./public/img/ui_todolist.jpeg"
-                            class="w-full h-full object-cover" alt=""></a>
-                    <div class="project-desc flex flex-col gap-y-2 lg:gap-0 lg:justify-between">
-                        <p class="text-xl font-outfit hover:underline"><a
-                                href="https://hlaingminoo78.github.io/react_todolist/">Todolist React App</a></p>
-                        <p class="text-sm text-justify font-serif">
-                            Simple responsive Todolist web application created with react, tailwindcss,
-                            jquery and jquery-ui. You can create your unlimited busy task and separate the tasks by
-                            their
-                            categories or titles.
-                        </p>
-                        <div class="techstack flex flex-row gap-x-3">
-                            <a href="https://reactjs.org/" target="_blank"><img src="./public/icon/react.svg"
-                                    class="w-6 h-6" alt=""></a>
-                            <a href="https://jquery.com/" target="_blank"><img src="./public/icon/jquery.svg"
-                                    class="w-6 h-6" alt=""></a>
-                            <img src="./public/icon/javascript.svg" class="w-6 h-6" alt="">
-                            <img src="./public/icon/html.svg" class="w-6 h-6" alt="">
-                            <img src="./public/icon/css3.svg" class="w-6 h-6" alt="">
-                            <a href="https://github.com/hlaingminoo78/react_todolist"
-                                class="hover:cursor-pointer hover:underline">View Source</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project flex flex-col sm:flex-row gap-y-3 sm:gap-x-7">
-                    <a href="https://hlaingminoo78.github.io/ui_todolist/"
-                        class="flex-none w-full h-40 sm:w-32 sm:h-32"><img src="./public/img/ui_todolist.jpeg"
-                            class="w-full h-full object-cover" alt=""></a>
-                    <div class="project-desc flex flex-col gap-y-2 lg:gap-0 lg:justify-between">
-                        <p class="text-xl font-outfit hover:underline"><a
-                                href="https://hlaingminoo78.github.io/ui_todolist/">Todolist UI</a></p>
-                        <p class="text-sm text-justify font-serif">
-                            Simple responsive user interface of Todolist web application created with tailwindcss,
-                            jquery and jquery-ui.
-                        </p>
-                        <div class="techstack flex flex-row gap-x-3">
-                            <a href="https://jquery.com/" target="_blank"><img src="./public/icon/jquery.svg"
-                                    class="w-6 h-6" alt=""></a>
-                            <img src="./public/icon/javascript.svg" class="w-6 h-6" alt="">
-                            <img src="./public/icon/html.svg" class="w-6 h-6" alt="">
-                            <img src="./public/icon/css3.svg" class="w-6 h-6" alt="">
-                            <a href="https://github.com/hlaingminoo78/ui_todolist"
-                                class="hover:cursor-pointer hover:underline">View Source</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project flex flex-col sm:flex-row gap-y-3 sm:gap-x-7">
-                    <a href="https://hlaingminoo78.github.io/game_snake/"
-                        class="flex-none w-full h-40 sm:w-32 sm:h-32"><img src="./public/img/snake_classic.png"
-                            class="w-full h-full object-cover" alt=""></a>
-                    <div class="project-desc flex flex-col gap-y-2 lg:gap-0 lg:justify-between">
-                        <p class="text-xl font-outfit hover:underline"><a
-                                href="https://hlaingminoo78.github.io/game_snake/">Snake Game</a></p>
-                        <p class="text-sm text-justify font-serif">
-                            Simple snake game in which you can customize the snake speed.
-                        </p>
-                        <div class="techstack flex flex-row gap-x-3">
-                            <img src="./public/icon/javascript.svg" class="w-6 h-6" alt="">
-                            <img src="./public/icon/html.svg" class="w-6 h-6" alt="">
-                            <img src="./public/icon/css3.svg" class="w-6 h-6" alt="">
-                            <a href="https://github.com/hlaingminoo78/game_snake/"
-                                class="hover:cursor-pointer hover:underline">View Source</a>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="project flex flex-col sm:flex-row gap-y-3 sm:gap-x-7">
+            <a
+              href="https://hlaingminoo78.github.io/eight_puzzle_solver_ui/"
+              class="flex-none w-full h-40 sm:w-32 sm:h-32"
+              ><img
+                src="./public/img/eight_puzzle.png"
+                class="w-full h-full object-cover"
+                alt=""
+            /></a>
+            <div
+              class="project-desc flex-auto flex flex-col gap-y-2 lg:gap-0 lg:justify-between"
+            >
+              <p class="text-xl font-outfit hover:underline">
+                <a
+                  href="https://hlaingminoo78.github.io/eight_puzzle_solver_ui/"
+                  >8 Puzzle Solver</a
+                >
+              </p>
+              <p class="text-sm text-justify font-serif">
+                Classic 8 puzzle game is automatically solved by 3 search
+                algorithms (breadth first search, depth first search, and a*
+                search). You can assign with different puzzle positions and it
+                will check whether it is solvable or not. It will also show you
+                how many search it has made.
+              </p>
+              <div class="techstack flex flex-row gap-x-3">
+                <a href="https://p5js.org/" target="_blank"
+                  ><img src="./public/icon/p5js.svg" class="w-6 h-6" alt=""
+                /></a>
+                <img
+                  src="./public/icon/javascript.svg"
+                  class="w-6 h-6"
+                  alt=""
+                />
+                <img src="./public/icon/html.svg" class="w-6 h-6" alt="" />
+                <img src="./public/icon/css3.svg" class="w-6 h-6" alt="" />
+                <a
+                  href="https://github.com/hlaingminoo78/eight_puzzle_solver"
+                  target="_blank"
+                  class="hover:cursor-pointer hover:underline"
+                  >View Source</a
+                >
+              </div>
             </div>
-        </section>
+          </div>
+          <div class="project flex flex-col sm:flex-row gap-y-3 sm:gap-x-7">
+            <a
+              href="https://hlaingminoo78.github.io/dwa/"
+              class="flex-none w-full h-40 sm:w-32 sm:h-32"
+              ><img
+                src="./public/img/dynamic_window_approach.png"
+                class="w-full h-full object-cover"
+                alt=""
+            /></a>
+            <div
+              class="project-desc flex flex-col gap-y-2 lg:gap-0 lg:justify-between"
+            >
+              <p class="text-xl font-outfit hover:underline">
+                <a href="https://hlaingminoo78.github.io/dwa/"
+                  >Dynamic Window Approach Algorithm Visualization</a
+                >
+              </p>
+              <p class="text-sm text-justify font-serif">
+                Visualization of Dynamic Window Approach algorithm. You can
+                varies the amount of obstacles and the robot will try to reach
+                the goal. It will also show you the path it has moved.
+              </p>
+              <div class="techstack flex flex-row gap-x-3">
+                <a href="https://p5js.org/" target="_blank"
+                  ><img src="./public/icon/p5js.svg" class="w-6 h-6" alt=""
+                /></a>
+                <img
+                  src="./public/icon/javascript.svg"
+                  class="w-6 h-6"
+                  alt=""
+                />
+                <img src="./public/icon/html.svg" class="w-6 h-6" alt="" />
+                <img src="./public/icon/css3.svg" class="w-6 h-6" alt="" />
+                <a
+                  href="https://github.com/hlaingminoo78/dwa"
+                  target="_blank"
+                  class="hover:cursor-pointer hover:underline"
+                  >View Source</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project flex flex-col sm:flex-row gap-y-3 sm:gap-x-7">
+            <a
+              href="https://hlaingminoo78.github.io/astar_path_finder/"
+              class="flex-none w-full h-40 sm:w-32 sm:h-32"
+              ><img
+                src="./public/img/astar_search.png"
+                class="w-full h-full object-cover"
+                alt=""
+            /></a>
+            <div
+              class="project-desc flex flex-col gap-y-2 lg:gap-0 lg:justify-between"
+            >
+              <p class="text-xl font-outfit hover:underline">
+                <a href="https://hlaingminoo78.github.io/astar_path_finder/"
+                  >A* Path Finder Algorithm Visualization</a
+                >
+              </p>
+              <p class="text-sm text-justify font-serif">
+                Visualization of A* path finding algorithm. You can assign the
+                start node, end node and it will try to find the shortest path
+                using heurisitc function. It will also show you the search
+                space(i.e how many search it has made).
+              </p>
+              <div class="techstack flex flex-row gap-x-3">
+                <img
+                  src="./public/icon/javascript.svg"
+                  class="w-6 h-6"
+                  alt=""
+                />
+                <img src="./public/icon/html.svg" class="w-6 h-6" alt="" />
+                <img src="./public/icon/css3.svg" class="w-6 h-6" alt="" />
+                <a
+                  href="https://github.com/hlaingminoo78/astar_path_finder"
+                  target="_blank"
+                  class="hover:cursor-pointer hover:underline"
+                  >View Source</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project flex flex-col sm:flex-row gap-y-3 sm:gap-x-7">
+            <a
+              href="https://hlaingminoo78.github.io/react_todolist/"
+              class="flex-none w-full h-40 sm:w-32 sm:h-32"
+              ><img
+                src="./public/img/ui_todolist.jpeg"
+                class="w-full h-full object-cover"
+                alt=""
+            /></a>
+            <div
+              class="project-desc flex flex-col gap-y-2 lg:gap-0 lg:justify-between"
+            >
+              <p class="text-xl font-outfit hover:underline">
+                <a href="https://hlaingminoo78.github.io/react_todolist/"
+                  >Todolist React App</a
+                >
+              </p>
+              <p class="text-sm text-justify font-serif">
+                Simple responsive Todolist web application created with react,
+                tailwindcss, jquery and jquery-ui. You can create your unlimited
+                busy task and separate the tasks by their categories or titles.
+              </p>
+              <div class="techstack flex flex-row gap-x-3">
+                <a href="https://reactjs.org/" target="_blank"
+                  ><img src="./public/icon/react.svg" class="w-6 h-6" alt=""
+                /></a>
+                <a href="https://jquery.com/" target="_blank"
+                  ><img src="./public/icon/jquery.svg" class="w-6 h-6" alt=""
+                /></a>
+                <img
+                  src="./public/icon/javascript.svg"
+                  class="w-6 h-6"
+                  alt=""
+                />
+                <img src="./public/icon/html.svg" class="w-6 h-6" alt="" />
+                <img src="./public/icon/css3.svg" class="w-6 h-6" alt="" />
+                <a
+                  href="https://github.com/hlaingminoo78/react_todolist"
+                  target="_blank"
+                  class="hover:cursor-pointer hover:underline"
+                  >View Source</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project flex flex-col sm:flex-row gap-y-3 sm:gap-x-7">
+            <a
+              href="https://hlaingminoo78.github.io/ui_todolist/"
+              class="flex-none w-full h-40 sm:w-32 sm:h-32"
+              ><img
+                src="./public/img/ui_todolist.jpeg"
+                class="w-full h-full object-cover"
+                alt=""
+            /></a>
+            <div
+              class="project-desc flex flex-col gap-y-2 lg:gap-0 lg:justify-between"
+            >
+              <p class="text-xl font-outfit hover:underline">
+                <a href="https://hlaingminoo78.github.io/ui_todolist/"
+                  >Todolist UI</a
+                >
+              </p>
+              <p class="text-sm text-justify font-serif">
+                Simple responsive user interface of Todolist web application
+                created with tailwindcss, jquery and jquery-ui.
+              </p>
+              <div class="techstack flex flex-row gap-x-3">
+                <a href="https://jquery.com/" target="_blank"
+                  ><img src="./public/icon/jquery.svg" class="w-6 h-6" alt=""
+                /></a>
+                <img
+                  src="./public/icon/javascript.svg"
+                  class="w-6 h-6"
+                  alt=""
+                />
+                <img src="./public/icon/html.svg" class="w-6 h-6" alt="" />
+                <img src="./public/icon/css3.svg" class="w-6 h-6" alt="" />
+                <a
+                  href="https://github.com/hlaingminoo78/ui_todolist"
+                  target="_blank"
+                  class="hover:cursor-pointer hover:underline"
+                  >View Source</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project flex flex-col sm:flex-row gap-y-3 sm:gap-x-7">
+            <a
+              href="https://hlaingminoo78.github.io/game_snake/"
+              class="flex-none w-full h-40 sm:w-32 sm:h-32"
+              ><img
+                src="./public/img/snake_classic.png"
+                class="w-full h-full object-cover"
+                alt=""
+            /></a>
+            <div
+              class="project-desc flex flex-col gap-y-2 lg:gap-0 lg:justify-between"
+            >
+              <p class="text-xl font-outfit hover:underline">
+                <a href="https://hlaingminoo78.github.io/game_snake/"
+                  >Snake Game</a
+                >
+              </p>
+              <p class="text-sm text-justify font-serif">
+                Simple snake game in which you can customize the snake speed.
+              </p>
+              <div class="techstack flex flex-row gap-x-3">
+                <img
+                  src="./public/icon/javascript.svg"
+                  class="w-6 h-6"
+                  alt=""
+                />
+                <img src="./public/icon/html.svg" class="w-6 h-6" alt="" />
+                <img src="./public/icon/css3.svg" class="w-6 h-6" alt="" />
+                <a
+                  href="https://github.com/hlaingminoo78/game_snake/"
+                  target="_blank"
+                  class="hover:cursor-pointer hover:underline"
+                  >View Source</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-</body>
-
+  </body>
 </html>
